@@ -46,6 +46,10 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import cubroidIconURL from './cubroid/cubroid.png';
+import cubroidPeripheralIconURL from './cubroid/cubroid_svg.svg';
+import cubroidMenuIconURL from './cubroid/cube48.svg';
+
 export default [
     {
         name: (
@@ -317,5 +321,65 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'Cubroid dc blocks',
+        extensionId: 'cubroiddcmotor',
+        collaborator: 'CubroidDcMotor',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play with DC motor blocks!"
+                description="Cubroid DC motor blocks. very nice!"
+                id="gui.extension.cubroiddcmotor.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid DC blocks."
+                id="gui.extension.cubroiddcmotor.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'Cubroid proximity senser',
+        extensionId: 'cubroidproximity',
+        collaborator: 'CubroidProximity',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play with Proximity sensor blocks!"
+                description="Cubroid Proximity sensor blocks. very nice!"
+                id="gui.extension.cubroidproximity.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid Proximity sensor blocks."
+                id="gui.extension.cubroidproximity.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
     }
 ];
