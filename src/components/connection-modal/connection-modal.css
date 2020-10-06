@@ -47,11 +47,13 @@
 
 .peripheral-tile-name {
     display: flex;
+    flex: 1;
     align-items: center;
 }
 
 [dir="ltr"] .peripheral-tile-image {
     margin-right: 0.5rem;
+    max-height: 50px;
 }
 
 [dir="rtl"] .peripheral-tile-image {

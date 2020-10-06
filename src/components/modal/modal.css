@@ -85,6 +85,7 @@ $sides: 20rem;
 
 [dir="ltr"] .header-image {
     margin-right: 0.5rem;
+    max-height: 50px;
 }
 
 [dir="rtl"] .header-image {

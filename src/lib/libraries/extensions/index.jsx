@@ -323,16 +323,16 @@ export default [
         helpLink: 'https://scratch.mit.edu/vernier'
     },
     {
-        name: 'Cubroid dc blocks',
-        extensionId: 'cubroiddcmotor',
-        collaborator: 'CubroidDcMotor',
+        name: 'Cubroid dc blocks 1',
+        extensionId: 'cubroiddcmotor01',
+        collaborator: 'CubroidDcMotor01',
         iconURL: cubroidIconURL,
         insetIconUrl: cubroidMenuIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="Play with DC motor blocks!"
-                description="Cubroid DC motor blocks. very nice!"
-                id="gui.extension.cubroiddcmotor.description"
+                defaultMessage="Play with DC motor 1 blocks!"
+                description="Cubroid DC motor 1 blocks. very nice!"
+                id="gui.extension.cubroiddcmotor01.description"
             />
         ),
         featured: true,
@@ -346,8 +346,38 @@ export default [
         connectingMessage: (
             <FormattedMessage
                 defaultMessage="Connecting"
-                description="Cubroid DC blocks."
-                id="gui.extension.cubroiddcmotor.connectingMessage"
+                description="Cubroid DC motor 1 blocks."
+                id="gui.extension.cubroiddcmotor01.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'Cubroid dc blocks 2',
+        extensionId: 'cubroiddcmotor02',
+        collaborator: 'CubroidDcMotor02',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play with DC motor 2 blocks!"
+                description="Cubroid DC motor 2 blocks. very nice!"
+                id="gui.extension.cubroiddcmotor02.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid DC motor 2 blocks."
+                id="gui.extension.cubroiddcmotor02.connectingMessage"
             />
         ),
         helpLink: 'https://www.cubroid.com'
