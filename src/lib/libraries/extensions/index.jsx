@@ -216,6 +216,78 @@ export default [
     {
         name: (
             <FormattedMessage
+                defaultMessage="Cubroid LED"
+                description="Cubroid LED"
+                id="gui.extension.cubroidled.name"
+            />
+        ),
+        extensionId: 'cubroidled',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid LED blocks. very nice!"
+                id="gui.extension.cubroidled.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid LED blocks."
+                id="gui.extension.cubroidled.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Cubroid Master"
+                description="Cubroid Master"
+                id="gui.extension.cubroidmaster.name"
+            />
+        ),
+        extensionId: 'cubroidmaster',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid LED blocks. very nice!"
+                id="gui.extension.cubroidmaster.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid Master blocks."
+                id="gui.extension.cubroidmaster.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
                 defaultMessage="Music"
                 description="Name for the 'Music' extension"
                 id="gui.extension.music.name"
