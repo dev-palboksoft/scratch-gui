@@ -288,6 +288,42 @@ export default [
     {
         name: (
             <FormattedMessage
+                defaultMessage="Cubroid light touch senser"
+                description="Cubroid light touch senser"
+                id="gui.extension.cubroidlighttouch.name"
+            />
+        ),
+        extensionId: 'cubroidlighttouch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play with Proximity sensor blocks!"
+                description="Cubroid Proximity sensor blocks. very nice!"
+                id="gui.extension.cubroidlighttouch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid Proximity sensor blocks."
+                id="gui.extension.cubroidlighttouch.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
                 defaultMessage="Music"
                 description="Name for the 'Music' extension"
                 id="gui.extension.music.name"
@@ -557,37 +593,3 @@ export default [
         helpLink: 'https://scratch.mit.edu/vernier'
     }
 ];
-/**
- * 
-    ,
-    {
-        name: 'Cubroid light touch senser',
-        extensionId: 'cubroidlighttouch',
-        collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Play with Proximity sensor blocks!"
-                description="Cubroid Proximity sensor blocks. very nice!"
-                id="gui.extension.cubroidlighttouch.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
-        connectingMessage: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid Proximity sensor blocks."
-                id="gui.extension.cubroidlighttouch.connectingMessage"
-            />
-        ),
-        helpLink: 'https://www.cubroid.com'
-    }
- */
