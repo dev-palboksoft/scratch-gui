@@ -52,24 +52,6 @@ import cubroidMenuIconURL from './cubroid/cube48.svg';
 
 export default [
     {
-        name: 'tm2',
-        extensionId: 'tm2scratch',
-        collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
-        description: 'tm2 scratch',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: false,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: false,
-        useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
-        connectingMessage: 'Connecting',
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
         name: (
             <FormattedMessage
                 defaultMessage="Cubroid dc motor blocks 1"
@@ -319,6 +301,24 @@ export default [
                 id="gui.extension.cubroidlighttouch.connectingMessage"
             />
         ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'tm2',
+        extensionId: 'tm2scratch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'tm2 scratch',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
