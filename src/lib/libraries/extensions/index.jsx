@@ -50,6 +50,27 @@ import cubroidIconURL from './cubroid/cubroid.png';
 import cubroidPeripheralIconURL from './cubroid/cubroid_svg.svg';
 import cubroidMenuIconURL from './cubroid/cube48.svg';
 
+import cubroidDcmotor01BgURL from './cubroid_dc_motor_1/cubroid_dcmotor_1_bg.png';
+import cubroidDcmotor01IconURL from './cubroid_dc_motor_1/cubroid_dcmotor_1_icon.svg';
+
+import cubroidDcmotor02BgURL from './cubroid_dc_motor_2/cubroid_dcmotor_2_bg.png';
+import cubroidDcmotor02IconURL from './cubroid_dc_motor_2/cubroid_dcmotor_2_icon.svg';
+
+import cubroidLedBgURL from './cubroid_led/cubroid_led_bg.png';
+import cubroidLedIconURL from './cubroid_led/cubroid_led_icon.svg';
+
+import cubroidLighttouchBgURL from './cubroid_lighttouch/cubroid_lighttouch_bg.png';
+import cubroidLighttouchIconURL from './cubroid_lighttouch/cubroid_lighttouch_icon.svg';
+
+import cubroidMasterBgURL from './cubroid_master/cubroid_master_bg.png';
+import cubroidMasterIconURL from './cubroid_master/cubroid_master_icon.svg';
+
+import cubroidProximityBgURL from './cubroid_proximity/cubroid_proximity_bg.png';
+import cubroidProximityIconURL from './cubroid_proximity/cubroid_proximity_icon.svg';
+
+import cubroidSoundBgURL from './cubroid_sound/cubroid_sound_bg.png';
+import cubroidSoundIconURL from './cubroid_sound/cubroid_sound_icon.svg';
+
 export default [
     {
         name: (
@@ -61,8 +82,8 @@ export default [
         ),
         extensionId: 'cubroiddcmotor01',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: cubroidDcmotor01BgURL,
+        insetIconUrl: cubroidDcmotor01IconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Play with DC motor 1 blocks!"
@@ -76,8 +97,8 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: cubroidDcmotor01IconURL,
+        connectionSmallIconURL: cubroidDcmotor01IconURL,
         connectingMessage: (
             <FormattedMessage
                 defaultMessage="Connecting"
@@ -97,8 +118,8 @@ export default [
         ),
         extensionId: 'cubroiddcmotor02',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: cubroidDcmotor02BgURL,
+        insetIconUrl: cubroidDcmotor02IconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Play with DC motor 2 blocks!"
@@ -112,85 +133,13 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: cubroidDcmotor02IconURL,
+        connectionSmallIconURL: cubroidDcmotor02IconURL,
         connectingMessage: (
             <FormattedMessage
                 defaultMessage="Connecting"
                 description="Cubroid DC motor 2 blocks."
                 id="gui.extension.cubroiddcmotor02.connectingMessage"
-            />
-        ),
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Cubroid proximity senser"
-                description="Cubroid proximity senser"
-                id="gui.extension.cubroidproximity.name"
-            />
-        ),
-        extensionId: 'cubroidproximity',
-        collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Play with Proximity sensor blocks!"
-                description="Cubroid Proximity sensor blocks. very nice!"
-                id="gui.extension.cubroidproximity.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
-        connectingMessage: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid Proximity sensor blocks."
-                id="gui.extension.cubroidproximity.connectingMessage"
-            />
-        ),
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Cubroid Sound block"
-                description="Cubroid Sound block"
-                id="gui.extension.cubroidsound.name"
-            />
-        ),
-        extensionId: 'cubroidsound',
-        collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid sound blocks. very nice!"
-                id="gui.extension.cubroidsound.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
-        connectingMessage: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid sound blocks."
-                id="gui.extension.cubroidsound.connectingMessage"
             />
         ),
         helpLink: 'https://www.cubroid.com'
@@ -205,8 +154,8 @@ export default [
         ),
         extensionId: 'cubroidled',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: cubroidLedBgURL,
+        insetIconUrl: cubroidLedIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Connecting"
@@ -234,42 +183,6 @@ export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="Cubroid Master"
-                description="Cubroid Master"
-                id="gui.extension.cubroidmaster.name"
-            />
-        ),
-        extensionId: 'cubroidmaster',
-        collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid LED blocks. very nice!"
-                id="gui.extension.cubroidmaster.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
-        connectingMessage: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid Master blocks."
-                id="gui.extension.cubroidmaster.connectingMessage"
-            />
-        ),
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: (
-            <FormattedMessage
                 defaultMessage="Cubroid light touch senser"
                 description="Cubroid light touch senser"
                 id="gui.extension.cubroidlighttouch.name"
@@ -277,8 +190,8 @@ export default [
         ),
         extensionId: 'cubroidlighttouch',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: cubroidLighttouchBgURL,
+        insetIconUrl: cubroidLighttouchIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Play with Proximity sensor blocks!"
@@ -292,13 +205,121 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: cubroidLighttouchIconURL,
+        connectionSmallIconURL: cubroidLighttouchIconURL,
         connectingMessage: (
             <FormattedMessage
                 defaultMessage="Connecting"
                 description="Cubroid Proximity sensor blocks."
                 id="gui.extension.cubroidlighttouch.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Cubroid Master"
+                description="Cubroid Master"
+                id="gui.extension.cubroidmaster.name"
+            />
+        ),
+        extensionId: 'cubroidmaster',
+        collaborator: 'Cubroid',
+        iconURL: cubroidMasterBgURL,
+        insetIconUrl: cubroidMasterIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid Master blocks. very nice!"
+                id="gui.extension.cubroidmaster.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidMasterIconURL,
+        connectionSmallIconURL: cubroidMasterIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid Master blocks."
+                id="gui.extension.cubroidmaster.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Cubroid proximity senser"
+                description="Cubroid proximity senser"
+                id="gui.extension.cubroidproximity.name"
+            />
+        ),
+        extensionId: 'cubroidproximity',
+        collaborator: 'Cubroid',
+        iconURL: cubroidProximityBgURL,
+        insetIconUrl: cubroidProximityIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play with Proximity sensor blocks!"
+                description="Cubroid Proximity sensor blocks. very nice!"
+                id="gui.extension.cubroidproximity.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidProximityIconURL,
+        connectionSmallIconURL: cubroidProximityIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid Proximity sensor blocks."
+                id="gui.extension.cubroidproximity.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Cubroid Sound block"
+                description="Cubroid Sound block"
+                id="gui.extension.cubroidsound.name"
+            />
+        ),
+        extensionId: 'cubroidsound',
+        collaborator: 'Cubroid',
+        iconURL: cubroidSoundBgURL,
+        insetIconUrl: cubroidSoundIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid sound blocks. very nice!"
+                id="gui.extension.cubroidsound.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidSoundIconURL,
+        connectionSmallIconURL: cubroidSoundIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Cubroid sound blocks."
+                id="gui.extension.cubroidsound.connectingMessage"
             />
         ),
         helpLink: 'https://www.cubroid.com'
@@ -321,6 +342,186 @@ export default [
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
+    {
+        name: 'ml2',
+        extensionId: 'ml2scratch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'ml2 scratch',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'posenet2',
+        extensionId: 'posenet2scratch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'posenet2 scratch',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'facemesh2scratch',
+        extensionId: 'facemesh2scratch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'tl2 scratch',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'handpose2scratch',
+        extensionId: 'handpose2scratch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'handpose2 scratch',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'qrcode',
+        extensionId: 'qrcode',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'QR code scratch',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'speech2scratch',
+        extensionId: 'speech2scratch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'speech to scratch',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'ic2scratch',
+        extensionId: 'ic2scratch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'ic to scratch',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'tmpose2scratch',
+        extensionId: 'tmpose2scratch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'tmpose to scratch',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: 'iftttwebhooks',
+        extensionId: 'iftttwebhooks',
+        collaborator: 'Cubroid',
+        iconURL: cubroidIconURL,
+        insetIconUrl: cubroidMenuIconURL,
+        description: 'ifttt Web hooks',
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: cubroidPeripheralIconURL,
+        connectionSmallIconURL: cubroidMenuIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    // {
+    //     name: 'numberbank',
+    //     extensionId: 'numberbank',
+    //     collaborator: 'Cubroid',
+    //     iconURL: cubroidIconURL,
+    //     insetIconUrl: cubroidMenuIconURL,
+    //     description: 'numberbank',
+    //     featured: true,
+    //     disabled: false,
+    //     bluetoothRequired: false,
+    //     internetConnectionRequired: false,
+    //     launchPeripheralConnectionFlow: false,
+    //     useAutoScan: false,
+    //     connectionIconURL: cubroidPeripheralIconURL,
+    //     connectionSmallIconURL: cubroidMenuIconURL,
+    //     connectingMessage: 'Connecting',
+    //     helpLink: 'https://www.cubroid.com'
+    // },
     {
         name: (
             <FormattedMessage
