@@ -71,6 +71,36 @@ import cubroidProximityIconURL from './cubroid_proximity/cubroid_proximity_icon.
 import cubroidSoundBgURL from './cubroid_sound/cubroid_sound_bg.png';
 import cubroidSoundIconURL from './cubroid_sound/cubroid_sound_icon.svg';
 
+import tm2scratchBgURL from './tm2scratch/cubroid_teachable_machine.png';
+import tm2scratchIconURL from './tm2scratch/cubroid_teachable_machine_s.svg';
+
+import ml2scratchBgURL from './ml2scratch/cubroid_machine_learning.png';
+import ml2scratchIconURL from './ml2scratch/cubroid_machine_learning_s.svg';
+
+import posenet2scratchBgURL from './posenet2scratch/cubroid_pose_net.png';
+import posenet2scratchIconURL from './posenet2scratch/cubroid_pose_net_s.svg';
+
+import facemesh2scratchBgURL from './facemesh2scratch/cubroid_face_tracking.png';
+import facemesh2scratchIconURL from './facemesh2scratch/cubroid_face_tracking_s.svg';
+
+import handpose2scratchBgURL from './handpose2scratch/cubroid_hand_pose.png';
+import handpose2scratchIconURL from './handpose2scratch/cubroid_hand_pose_s.svg';
+
+import qrcode2scratchBgURL from './qrcode/cubroid_QR.png';
+import qrcode2scratchIconURL from './qrcode/cubroid_QR_s.svg';
+
+import speech2scratchBgURL from './speech2scratch/cubroid_speech_recognition.png';
+import speech2scratchIconURL from './speech2scratch/cubroid_speech_recognition_s.svg';
+
+import ic2scratchBgURL from './ic2scratch/cubroid_image_classification.png';
+import ic2scratchIconURL from './ic2scratch/cubroid_image_classification_s.svg';
+
+import iftttwebhooks2scratchBgURL from './iftttwebhooks/cubroid_IFTTT_webhooks.png';
+import iftttwebhooks2scratchIconURL from './iftttwebhooks/cubroid_IFTTT_webhooks_s.svg';
+
+import tmpose2scratchBgURL from './tmpose2scratch/cubroid_tm_pose.png';
+import tmpose2scratchIconURL from './tmpose2scratch/cubroid_tm_pose_s.svg';
+
 export default [
     {
         name: (
@@ -83,7 +113,7 @@ export default [
         extensionId: 'cubroiddcmotor01',
         collaborator: 'Cubroid',
         iconURL: cubroidDcmotor01BgURL,
-        insetIconUrl: cubroidDcmotor01IconURL,
+        insetIconURL: cubroidDcmotor01IconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Play with DC motor 1 blocks!"
@@ -119,7 +149,7 @@ export default [
         extensionId: 'cubroiddcmotor02',
         collaborator: 'Cubroid',
         iconURL: cubroidDcmotor02BgURL,
-        insetIconUrl: cubroidDcmotor02IconURL,
+        insetIconURL: cubroidDcmotor02IconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Play with DC motor 2 blocks!"
@@ -155,7 +185,7 @@ export default [
         extensionId: 'cubroidled',
         collaborator: 'Cubroid',
         iconURL: cubroidLedBgURL,
-        insetIconUrl: cubroidLedIconURL,
+        insetIconURL: cubroidLedIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Connecting"
@@ -191,7 +221,7 @@ export default [
         extensionId: 'cubroidlighttouch',
         collaborator: 'Cubroid',
         iconURL: cubroidLighttouchBgURL,
-        insetIconUrl: cubroidLighttouchIconURL,
+        insetIconURL: cubroidLighttouchIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Play with Proximity sensor blocks!"
@@ -227,7 +257,7 @@ export default [
         extensionId: 'cubroidmaster',
         collaborator: 'Cubroid',
         iconURL: cubroidMasterBgURL,
-        insetIconUrl: cubroidMasterIconURL,
+        insetIconURL: cubroidMasterIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Connecting"
@@ -263,7 +293,7 @@ export default [
         extensionId: 'cubroidproximity',
         collaborator: 'Cubroid',
         iconURL: cubroidProximityBgURL,
-        insetIconUrl: cubroidProximityIconURL,
+        insetIconURL: cubroidProximityIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Play with Proximity sensor blocks!"
@@ -299,7 +329,7 @@ export default [
         extensionId: 'cubroidsound',
         collaborator: 'Cubroid',
         iconURL: cubroidSoundBgURL,
-        insetIconUrl: cubroidSoundIconURL,
+        insetIconURL: cubroidSoundIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Connecting"
@@ -325,11 +355,11 @@ export default [
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'tm2',
+        name: 'TM2Scratch',
         extensionId: 'tm2scratch',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: tm2scratchBgURL,
+        insetIconURL: tm2scratchIconURL,
         description: 'tm2 scratch',
         featured: true,
         disabled: false,
@@ -337,17 +367,17 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: tm2scratchIconURL,
+        connectionSmallIconURL: tm2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'ml2',
+        name: 'ML2Scratch',
         extensionId: 'ml2scratch',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: ml2scratchBgURL,
+        insetIconURL: ml2scratchIconURL,
         description: 'ml2 scratch',
         featured: true,
         disabled: false,
@@ -355,17 +385,17 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: ml2scratchIconURL,
+        connectionSmallIconURL: ml2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'posenet2',
+        name: 'Posenet2Scratch',
         extensionId: 'posenet2scratch',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: posenet2scratchBgURL,
+        insetIconURL: posenet2scratchIconURL,
         description: 'posenet2 scratch',
         featured: true,
         disabled: false,
@@ -373,35 +403,35 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: posenet2scratchIconURL,
+        connectionSmallIconURL: posenet2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'facemesh2scratch',
+        name: 'Facemesh2Scratch',
         extensionId: 'facemesh2scratch',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
-        description: 'tl2 scratch',
+        iconURL: facemesh2scratchBgURL,
+        insetIconURL: facemesh2scratchIconURL,
+        description: 'face mesh 2 scratch',
         featured: true,
         disabled: false,
         bluetoothRequired: false,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: facemesh2scratchIconURL,
+        connectionSmallIconURL: facemesh2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'handpose2scratch',
+        name: 'Handpose2Scratch',
         extensionId: 'handpose2scratch',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: handpose2scratchBgURL,
+        insetIconURL: handpose2scratchIconURL,
         description: 'handpose2 scratch',
         featured: true,
         disabled: false,
@@ -409,17 +439,17 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: handpose2scratchIconURL,
+        connectionSmallIconURL: handpose2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'qrcode',
+        name: 'QR',
         extensionId: 'qrcode',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: qrcode2scratchBgURL,
+        insetIconURL: qrcode2scratchIconURL,
         description: 'QR code scratch',
         featured: true,
         disabled: false,
@@ -427,17 +457,17 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: qrcode2scratchIconURL,
+        connectionSmallIconURL: qrcode2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'speech2scratch',
+        name: 'Speech2Scratch',
         extensionId: 'speech2scratch',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: speech2scratchBgURL,
+        insetIconURL: speech2scratchIconURL,
         description: 'speech to scratch',
         featured: true,
         disabled: false,
@@ -445,35 +475,35 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: speech2scratchIconURL,
+        connectionSmallIconURL: speech2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'ic2scratch',
+        name: 'ImageClassifier2Scratch',
         extensionId: 'ic2scratch',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
-        description: 'ic to scratch',
+        iconURL: ic2scratchBgURL,
+        insetIconURL: ic2scratchIconURL,
+        description: 'Image Classifier to Scratch',
         featured: true,
         disabled: false,
         bluetoothRequired: false,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: ic2scratchIconURL,
+        connectionSmallIconURL: ic2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'tmpose2scratch',
+        name: 'TMPose2scratch',
         extensionId: 'tmpose2scratch',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: tmpose2scratchBgURL,
+        insetIconURL: tmpose2scratchIconURL,
         description: 'tmpose to scratch',
         featured: true,
         disabled: false,
@@ -481,8 +511,8 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: tmpose2scratchIconURL,
+        connectionSmallIconURL: tmpose2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
@@ -490,8 +520,8 @@ export default [
         name: 'iftttwebhooks',
         extensionId: 'iftttwebhooks',
         collaborator: 'Cubroid',
-        iconURL: cubroidIconURL,
-        insetIconUrl: cubroidMenuIconURL,
+        iconURL: iftttwebhooks2scratchBgURL,
+        insetIconURL: iftttwebhooks2scratchIconURL,
         description: 'ifttt Web hooks',
         featured: true,
         disabled: false,
@@ -499,8 +529,8 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: iftttwebhooks2scratchIconURL,
+        connectionSmallIconURL: iftttwebhooks2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
@@ -509,7 +539,7 @@ export default [
     //     extensionId: 'numberbank',
     //     collaborator: 'Cubroid',
     //     iconURL: cubroidIconURL,
-    //     insetIconUrl: cubroidMenuIconURL,
+    //     insetIconURL: cubroidMenuIconURL,
     //     description: 'numberbank',
     //     featured: true,
     //     disabled: false,
