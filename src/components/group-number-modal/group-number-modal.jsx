@@ -44,13 +44,15 @@ class GroupNumberModalConponents extends React.Component {
     handleSetGroupNumber () {
         try {
             let chkGroupNumber = Cast.toString(this.state.groupNumber);
-            if(chkGroupNumber.length > 0) {
+            if ( chkGroupNumber === '0' || chkGroupNumber === '00' || chkGroupNumber === '000' || chkGroupNumber === '0000' ) {
+                chkGroupNumber = '';
+            } else if ( chkGroupNumber.length > 0 ) {
                 chkGroupNumber = ('0000' + chkGroupNumber).substr(-4);
-                if (this.state.groupNumber != chkGroupNumber) {
-                    this.setState({
-                        groupNumber: chkGroupNumber
-                    })
-                }
+            }
+            if ( this.state.groupNumber != chkGroupNumber ) {
+                this.setState({
+                    groupNumber: chkGroupNumber
+                });
             }
             localStorage.setItem('groupNumber', chkGroupNumber);
             this.handleSetSussMsg('그룹 넘버링 설정 완료');
