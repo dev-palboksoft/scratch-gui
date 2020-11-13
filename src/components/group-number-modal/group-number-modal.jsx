@@ -13,6 +13,31 @@ const messages = defineMessages({
         id: 'gui.cubroidGroupNumber.label',
         defaultMessage: '그룹 번호 설정',
         description: '그룹 번호 설정'
+    },
+    ok: {
+        id: 'gui.cubroidGroupNumber.ok',
+        defaultMessage: '확인',
+        description: '확인'
+    },
+    succMsg: {
+        id: 'gui.cubroidGroupNumber.succMsg',
+        defaultMessage: '블록 그룹 번호 설정 완료',
+        description: '블록 그룹 번호 설정 완료'
+    },
+    errorMsg: {
+        id: 'gui.cubroidGroupNumber.errorMsg',
+        defaultMessage: '블록 그룹 번호 설정 실패',
+        description: '블록 그룹 번호 설정 실패'
+    },
+    guideComment: {
+        id: 'gui.cubroidGroupNumber.guideComment',
+        defaultMessage: '앱스토어에서 큐브로이드 매니저 앱을 다운로드하여 블록 그룹 번호를 설정할 수 있습니다.',
+        description: '앱스토어에서 큐브로이드 매니저 앱을 다운로드하여 블록 그룹 번호를 설정할 수 있습니다.'
+    },
+    help: {
+        id: 'gui.cubroidGroupNumber.help',
+        defaultMessage: '도움말',
+        description: '도움말'
     }
 });
 class GroupNumberModalConponents extends React.Component {
@@ -55,10 +80,10 @@ class GroupNumberModalConponents extends React.Component {
                 });
             }
             localStorage.setItem('groupNumber', chkGroupNumber);
-            this.handleSetSussMsg('그룹 넘버링 설정 완료');
+            this.handleSetSussMsg(this.props.intl.formatMessage({...messages.succMsg}));
             // console.log("handleSetGroupNumber");
         } catch (e) {
-            this.handleSetErrorMsg('그룹 넘버링 설정 실패');
+            this.handleSetErrorMsg(this.props.intl.formatMessage({...messages.errorMsg}));
         }
     };
     handleChangeInput (e) {
@@ -112,7 +137,7 @@ class GroupNumberModalConponents extends React.Component {
                                     className={styles.inputButtonStyle}
                                     onClick={this.handleSetGroupNumber}
                                 >
-                                    확인
+                                    {this.props.intl.formatMessage({...messages.ok})}
                                 </button>
                             </div>
                             <div>
@@ -125,10 +150,9 @@ class GroupNumberModalConponents extends React.Component {
                             </div>
                         </div>
                         <div>
-                            앱스토어에서 큐브로이드 매니저 앱을 다운로드하여
-                            블록 그룹 번호를 설정할 수 있습니다.
+                            {this.props.intl.formatMessage({...messages.guideComment})}
                             <br /><br />
-                            <a href="https://www.cubroid.co.kr" target="_blank">도움말</a>
+                            <a href="https://www.cubroid.co.kr" target="_blank">{this.props.intl.formatMessage({...messages.help})}</a>
 
                         </div>
                     </Box>

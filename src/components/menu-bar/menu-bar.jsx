@@ -713,7 +713,11 @@ class MenuBar extends React.Component {
                             )}
                         >
                             <span onClick={this.handleSetGroupNumber}>
-                                그룹 넘버링
+                                <FormattedMessage
+                                    defaultMessage="그룹 번호 설정"
+                                    description="그룹 번호 설정"
+                                    id="gui.cubroidGroupNumber.label"
+                                />
                             </span>
                         </div>
                     </React.Fragment>

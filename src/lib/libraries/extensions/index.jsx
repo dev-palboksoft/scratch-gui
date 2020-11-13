@@ -105,8 +105,8 @@ export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="Cubroid dc motor blocks 1"
-                description="Cubroid dc motor blocks 1"
+                defaultMessage="DC 모터 1번 블록"
+                description="DC 모터 1번 블록"
                 id="gui.extension.cubroiddcmotor01.name"
             />
         ),
