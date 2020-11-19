@@ -116,8 +116,8 @@ export default [
         insetIconURL: cubroidDcmotor01IconURL,
         description: (
             <FormattedMessage
-                defaultMessage="Play with DC motor 1 blocks!"
-                description="Cubroid DC motor 1 blocks. very nice!"
+                defaultMessage="360도 회전하는 블록"
+                description="360도 회전하는 블록"
                 id="gui.extension.cubroiddcmotor01.description"
             />
         ),
@@ -131,8 +131,8 @@ export default [
         connectionSmallIconURL: cubroidDcmotor01IconURL,
         connectingMessage: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid DC motor 1 blocks."
+                defaultMessage="연결 중"
+                description="연결 중"
                 id="gui.extension.cubroiddcmotor01.connectingMessage"
             />
         ),
@@ -141,8 +141,8 @@ export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="Cubroid dc motor blocks 2"
-                description="Cubroid dc motor blocks 2"
+                defaultMessage="DC 모터 2번 블록"
+                description="DC 모터 2번 블록"
                 id="gui.extension.cubroiddcmotor02.name"
             />
         ),
@@ -152,8 +152,8 @@ export default [
         insetIconURL: cubroidDcmotor02IconURL,
         description: (
             <FormattedMessage
-                defaultMessage="Play with DC motor 2 blocks!"
-                description="Cubroid DC motor 2 blocks. very nice!"
+                defaultMessage="360도 회전하는 블록"
+                description="360도 회전하는 블록"
                 id="gui.extension.cubroiddcmotor02.description"
             />
         ),
@@ -167,8 +167,8 @@ export default [
         connectionSmallIconURL: cubroidDcmotor02IconURL,
         connectingMessage: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid DC motor 2 blocks."
+                defaultMessage="연결 중"
+                description="연결 중"
                 id="gui.extension.cubroiddcmotor02.connectingMessage"
             />
         ),
@@ -177,8 +177,8 @@ export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="Cubroid LED"
-                description="Cubroid LED"
+                defaultMessage="LED 블록"
+                description="LED 블록"
                 id="gui.extension.cubroidled.name"
             />
         ),
@@ -188,8 +188,8 @@ export default [
         insetIconURL: cubroidLedIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid LED blocks. very nice!"
+                defaultMessage="총 64개의 LED 도트로 다양한 그림과 문자 등을 표현하는 블록"
+                description="총 64개의 LED 도트로 다양한 그림과 문자 등을 표현하는 블록"
                 id="gui.extension.cubroidled.description"
             />
         ),
@@ -199,12 +199,12 @@ export default [
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: cubroidPeripheralIconURL,
-        connectionSmallIconURL: cubroidMenuIconURL,
+        connectionIconURL: cubroidLedIconURL,
+        connectionSmallIconURL: cubroidLedIconURL,
         connectingMessage: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid LED blocks."
+                defaultMessage="연결 중"
+                description="연결 중"
                 id="gui.extension.cubroidled.connectingMessage"
             />
         ),
@@ -213,44 +213,8 @@ export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="Cubroid light touch senser"
-                description="Cubroid light touch senser"
-                id="gui.extension.cubroidlighttouch.name"
-            />
-        ),
-        extensionId: 'cubroidlighttouch',
-        collaborator: 'Cubroid',
-        iconURL: cubroidLighttouchBgURL,
-        insetIconURL: cubroidLighttouchIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Play with Proximity sensor blocks!"
-                description="Cubroid Proximity sensor blocks. very nice!"
-                id="gui.extension.cubroidlighttouch.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: cubroidLighttouchIconURL,
-        connectionSmallIconURL: cubroidLighttouchIconURL,
-        connectingMessage: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid Proximity sensor blocks."
-                id="gui.extension.cubroidlighttouch.connectingMessage"
-            />
-        ),
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Cubroid Master"
-                description="Cubroid Master"
+                defaultMessage="마스터 블록"
+                description="마스터 블록"
                 id="gui.extension.cubroidmaster.name"
             />
         ),
@@ -260,8 +224,8 @@ export default [
         insetIconURL: cubroidMasterIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid Master blocks. very nice!"
+                defaultMessage="색깔 빛을 표현하는 블록"
+                description="색깔 빛을 표현하는 블록"
                 id="gui.extension.cubroidmaster.description"
             />
         ),
@@ -275,8 +239,8 @@ export default [
         connectionSmallIconURL: cubroidMasterIconURL,
         connectingMessage: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid Master blocks."
+                defaultMessage="연결 중"
+                description="연결 중"
                 id="gui.extension.cubroidmaster.connectingMessage"
             />
         ),
@@ -285,44 +249,8 @@ export default [
     {
         name: (
             <FormattedMessage
-                defaultMessage="Cubroid proximity senser"
-                description="Cubroid proximity senser"
-                id="gui.extension.cubroidproximity.name"
-            />
-        ),
-        extensionId: 'cubroidproximity',
-        collaborator: 'Cubroid',
-        iconURL: cubroidProximityBgURL,
-        insetIconURL: cubroidProximityIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Play with Proximity sensor blocks!"
-                description="Cubroid Proximity sensor blocks. very nice!"
-                id="gui.extension.cubroidproximity.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: true,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: true,
-        useAutoScan: false,
-        connectionIconURL: cubroidProximityIconURL,
-        connectionSmallIconURL: cubroidProximityIconURL,
-        connectingMessage: (
-            <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid Proximity sensor blocks."
-                id="gui.extension.cubroidproximity.connectingMessage"
-            />
-        ),
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Cubroid Sound block"
-                description="Cubroid Sound block"
+                defaultMessage="큐브로이드 사운트 블록"
+                description="큐브로이드 사운트 블록"
                 id="gui.extension.cubroidsound.name"
             />
         ),
@@ -332,8 +260,8 @@ export default [
         insetIconURL: cubroidSoundIconURL,
         description: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid sound blocks. very nice!"
+                defaultMessage="다양한 음을 표현하는 블록"
+                description="다양한 음을 표현하는 블록"
                 id="gui.extension.cubroidsound.description"
             />
         ),
@@ -347,38 +275,104 @@ export default [
         connectionSmallIconURL: cubroidSoundIconURL,
         connectingMessage: (
             <FormattedMessage
-                defaultMessage="Connecting"
-                description="Cubroid sound blocks."
+                defaultMessage="연결 중"
+                description="연결 중"
                 id="gui.extension.cubroidsound.connectingMessage"
             />
         ),
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'TM2Scratch',
-        extensionId: 'tm2scratch',
+        name: (
+            <FormattedMessage
+                defaultMessage="근접 센서 블록"
+                description="근접 센서 블록"
+                id="gui.extension.cubroidproximity.name"
+            />
+        ),
+        extensionId: 'cubroidproximity',
         collaborator: 'Cubroid',
-        iconURL: tm2scratchBgURL,
-        insetIconURL: tm2scratchIconURL,
-        description: 'tm2 scratch',
+        iconURL: cubroidProximityBgURL,
+        insetIconURL: cubroidProximityIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="적외선 센서로 물체의 접근을 감지하는 블록"
+                description="적외선 센서로 물체의 접근을 감지하는 블록"
+                id="gui.extension.cubroidproximity.description"
+            />
+        ),
         featured: true,
         disabled: false,
-        bluetoothRequired: false,
+        bluetoothRequired: true,
         internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: false,
+        launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: tm2scratchIconURL,
-        connectionSmallIconURL: tm2scratchIconURL,
-        connectingMessage: 'Connecting',
+        connectionIconURL: cubroidProximityIconURL,
+        connectionSmallIconURL: cubroidProximityIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="연결 중"
+                description="연결 중"
+                id="gui.extension.cubroidproximity.connectingMessage"
+            />
+        ),
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'ML2Scratch',
+        name: (
+            <FormattedMessage
+                defaultMessage="라이트 터치 센서 블록"
+                description="라이트 터치 센서 블록"
+                id="gui.extension.cubroidlighttouch.name"
+            />
+        ),
+        extensionId: 'cubroidlighttouch',
+        collaborator: 'Cubroid',
+        iconURL: cubroidLighttouchBgURL,
+        insetIconURL: cubroidLighttouchIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="빛의 양을 감지하는 블록. 터치 버튼의 누름 상태를 감지하는 블록"
+                description="빛의 양을 감지하는 블록. 터치 버튼의 누름 상태를 감지하는 블록"
+                id="gui.extension.cubroidlighttouch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: cubroidLighttouchIconURL,
+        connectionSmallIconURL: cubroidLighttouchIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="연결 중"
+                description="연결 중"
+                id="gui.extension.cubroidlighttouch.connectingMessage"
+            />
+        ),
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="큐브로이드 머신러닝"
+                description="큐브로이드 머신러닝"
+                id="gui.extension.cubroidml2scratch.name"
+            />
+        ),
         extensionId: 'ml2scratch',
         collaborator: 'Cubroid',
         iconURL: ml2scratchBgURL,
         insetIconURL: ml2scratchIconURL,
-        description: 'ml2 scratch',
+        description: (
+            <FormattedMessage
+                defaultMessage="머신러닝을 이용한 이미지 인식을 쉽게 사용할 수 있습니다."
+                description="머신러닝을 이용한 이미지 인식을 쉽게 사용할 수 있습니다."
+                id="gui.extension.cubroidml2scratch.description"
+            />
+        ),
         featured: true,
         disabled: false,
         bluetoothRequired: false,
@@ -391,120 +385,54 @@ export default [
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'Posenet2Scratch',
-        extensionId: 'posenet2scratch',
+        name: (
+            <FormattedMessage
+                defaultMessage="티처블머신 이미지 & 사운드"
+                description="티처블머신 이미지 & 사운드"
+                id="gui.extension.cubroidtm2scratch.name"
+            />
+        ),
+        extensionId: 'tm2scratch',
         collaborator: 'Cubroid',
-        iconURL: posenet2scratchBgURL,
-        insetIconURL: posenet2scratchIconURL,
-        description: 'posenet2 scratch',
+        iconURL: tm2scratchBgURL,
+        insetIconURL: tm2scratchIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="티처블머신을 이용하여 이미지, 음성 인식을 사용할 수 있습니다."
+                description="티처블머신을 이용하여 이미지, 음성 인식을 사용할 수 있습니다."
+                id="gui.extension.cubroidtm2scratch.description"
+            />
+        ),
         featured: true,
         disabled: false,
         bluetoothRequired: false,
         internetConnectionRequired: false,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
-        connectionIconURL: posenet2scratchIconURL,
-        connectionSmallIconURL: posenet2scratchIconURL,
+        connectionIconURL: tm2scratchIconURL,
+        connectionSmallIconURL: tm2scratchIconURL,
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'Facemesh2Scratch',
-        extensionId: 'facemesh2scratch',
-        collaborator: 'Cubroid',
-        iconURL: facemesh2scratchBgURL,
-        insetIconURL: facemesh2scratchIconURL,
-        description: 'face mesh 2 scratch',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: false,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: false,
-        useAutoScan: false,
-        connectionIconURL: facemesh2scratchIconURL,
-        connectionSmallIconURL: facemesh2scratchIconURL,
-        connectingMessage: 'Connecting',
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: 'Handpose2Scratch',
-        extensionId: 'handpose2scratch',
-        collaborator: 'Cubroid',
-        iconURL: handpose2scratchBgURL,
-        insetIconURL: handpose2scratchIconURL,
-        description: 'handpose2 scratch',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: false,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: false,
-        useAutoScan: false,
-        connectionIconURL: handpose2scratchIconURL,
-        connectionSmallIconURL: handpose2scratchIconURL,
-        connectingMessage: 'Connecting',
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: 'QR',
-        extensionId: 'qrcode',
-        collaborator: 'Cubroid',
-        iconURL: qrcode2scratchBgURL,
-        insetIconURL: qrcode2scratchIconURL,
-        description: 'QR code scratch',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: false,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: false,
-        useAutoScan: false,
-        connectionIconURL: qrcode2scratchIconURL,
-        connectionSmallIconURL: qrcode2scratchIconURL,
-        connectingMessage: 'Connecting',
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: 'Speech2Scratch',
-        extensionId: 'speech2scratch',
-        collaborator: 'Cubroid',
-        iconURL: speech2scratchBgURL,
-        insetIconURL: speech2scratchIconURL,
-        description: 'speech to scratch',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: false,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: false,
-        useAutoScan: false,
-        connectionIconURL: speech2scratchIconURL,
-        connectionSmallIconURL: speech2scratchIconURL,
-        connectingMessage: 'Connecting',
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: 'ImageClassifier2Scratch',
-        extensionId: 'ic2scratch',
-        collaborator: 'Cubroid',
-        iconURL: ic2scratchBgURL,
-        insetIconURL: ic2scratchIconURL,
-        description: 'Image Classifier to Scratch',
-        featured: true,
-        disabled: false,
-        bluetoothRequired: false,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: false,
-        useAutoScan: false,
-        connectionIconURL: ic2scratchIconURL,
-        connectionSmallIconURL: ic2scratchIconURL,
-        connectingMessage: 'Connecting',
-        helpLink: 'https://www.cubroid.com'
-    },
-    {
-        name: 'TMPose2scratch',
+        name: (
+            <FormattedMessage
+                defaultMessage="티처블머신 포즈"
+                description="티처블머신 포즈"
+                id="gui.extension.cubroidtmpose2scratch.name"
+            />
+        ),
         extensionId: 'tmpose2scratch',
         collaborator: 'Cubroid',
         iconURL: tmpose2scratchBgURL,
         insetIconURL: tmpose2scratchIconURL,
-        description: 'tmpose to scratch',
+        description: (
+            <FormattedMessage
+                defaultMessage="티처블머신을 이용하여 포즈 인식을 사용할 수 있습니다."
+                description="티처블머신을 이용하여 포즈 인식을 사용할 수 있습니다."
+                id="gui.extension.cubroidtmpose2scratch.description"
+            />
+        ),
         featured: true,
         disabled: false,
         bluetoothRequired: false,
@@ -517,12 +445,204 @@ export default [
         helpLink: 'https://www.cubroid.com'
     },
     {
-        name: 'iftttwebhooks',
+        name: (
+            <FormattedMessage
+                defaultMessage="큐브로이드 포즈"
+                description="큐브로이드 포즈"
+                id="gui.extension.cubroidposenet2scratch.name"
+            />
+        ),
+        extensionId: 'posenet2scratch',
+        collaborator: 'Cubroid',
+        iconURL: posenet2scratchBgURL,
+        insetIconURL: posenet2scratchIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="신체의 각 부분의 x와 y 위치를 얻을 수 있습니다."
+                description="신체의 각 부분의 x와 y 위치를 얻을 수 있습니다."
+                id="gui.extension.cubroidposenet2scratch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: posenet2scratchIconURL,
+        connectionSmallIconURL: posenet2scratchIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="큐브로이드 이미지분류"
+                description="큐브로이드 이미지분류"
+                id="gui.extension.cubroidic2scratch.name"
+            />
+        ),
+        extensionId: 'ic2scratch',
+        collaborator: 'Cubroid',
+        iconURL: ic2scratchBgURL,
+        insetIconURL: ic2scratchIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="카메라에 비친 물체를 인식하고, 무엇인지를 판정합니다."
+                description="카메라에 비친 물체를 인식하고, 무엇인지를 판정합니다."
+                id="gui.extension.cubroidic2scratch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: ic2scratchIconURL,
+        connectionSmallIconURL: ic2scratchIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="큐브로이드 음성인식"
+                description="큐브로이드 음성인식"
+                id="gui.extension.cubroidspeech2scratch.name"
+            />
+        ),
+        extensionId: 'speech2scratch',
+        collaborator: 'Cubroid',
+        iconURL: speech2scratchBgURL,
+        insetIconURL: speech2scratchIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="음성 인식 기능을 이용하여 음성을 텍스트로 변환 합니다."
+                description="음성 인식 기능을 이용하여 음성을 텍스트로 변환 합니다."
+                id="gui.extension.cubroidspeech2scratch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: speech2scratchIconURL,
+        connectionSmallIconURL: speech2scratchIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="큐브로이드 얼굴 추적"
+                description="큐브로이드 얼굴 추적"
+                id="gui.extension.cubroidfacemesh2scratch.name"
+            />
+        ),
+        extensionId: 'facemesh2scratch',
+        collaborator: 'Cubroid',
+        iconURL: facemesh2scratchBgURL,
+        insetIconURL: facemesh2scratchIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="카메라만으로 얼굴 추적할 수 있습니다."
+                description="카메라만으로 얼굴 추적할 수 있습니다."
+                id="gui.extension.cubroidfacemesh2scratch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: facemesh2scratchIconURL,
+        connectionSmallIconURL: facemesh2scratchIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="큐브로이드 손가락 추적"
+                description="큐브로이드 손가락 추적"
+                id="gui.extension.cubroidhandpose2scratch.name"
+            />
+        ),
+        extensionId: 'handpose2scratch',
+        collaborator: 'Cubroid',
+        iconURL: handpose2scratchBgURL,
+        insetIconURL: handpose2scratchIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="카메라만으로 손가락을 추적할 수 있습니다."
+                description="카메라만으로 손가락을 추적할 수 있습니다."
+                id="gui.extension.cubroidhandpose2scratch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: handpose2scratchIconURL,
+        connectionSmallIconURL: handpose2scratchIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="QR 코드"
+                description="QR 코드"
+                id="gui.extension.cubroidqrcode2scratch.name"
+            />
+        ),
+        extensionId: 'qrcode',
+        collaborator: 'Cubroid',
+        iconURL: qrcode2scratchBgURL,
+        insetIconURL: qrcode2scratchIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="QR 코드를 읽습니다."
+                description="QR 코드를 읽습니다."
+                id="gui.extension.cubroidqrcode2scratch.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        connectionIconURL: qrcode2scratchIconURL,
+        connectionSmallIconURL: qrcode2scratchIconURL,
+        connectingMessage: 'Connecting',
+        helpLink: 'https://www.cubroid.com'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="IFTTT Webhook"
+                description="IFTTT Webhook"
+                id="gui.extension.cubroidiftttwebhooks2scratch.name"
+            />
+        ),
         extensionId: 'iftttwebhooks',
         collaborator: 'Cubroid',
         iconURL: iftttwebhooks2scratchBgURL,
         insetIconURL: iftttwebhooks2scratchIconURL,
-        description: 'ifttt Web hooks',
+        description: (
+            <FormattedMessage
+                defaultMessage="IFTTT을 통해 다른 서비스와 연계합니다."
+                description="IFTTT을 통해 다른 서비스와 연계합니다."
+                id="gui.extension.cubroidiftttwebhooks2scratch.description"
+            />
+        ),
         featured: true,
         disabled: false,
         bluetoothRequired: false,
