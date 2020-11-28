@@ -376,7 +376,7 @@ export default [
         featured: true,
         disabled: false,
         bluetoothRequired: false,
-        internetConnectionRequired: false,
+        internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
         connectionIconURL: ml2scratchIconURL,
@@ -406,7 +406,7 @@ export default [
         featured: true,
         disabled: false,
         bluetoothRequired: false,
-        internetConnectionRequired: false,
+        internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
         connectionIconURL: tm2scratchIconURL,
@@ -436,7 +436,7 @@ export default [
         featured: true,
         disabled: false,
         bluetoothRequired: false,
-        internetConnectionRequired: false,
+        internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
         connectionIconURL: tmpose2scratchIconURL,
@@ -466,7 +466,7 @@ export default [
         featured: true,
         disabled: false,
         bluetoothRequired: false,
-        internetConnectionRequired: false,
+        internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
         connectionIconURL: posenet2scratchIconURL,
@@ -496,7 +496,7 @@ export default [
         featured: true,
         disabled: false,
         bluetoothRequired: false,
-        internetConnectionRequired: false,
+        internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
         connectionIconURL: ic2scratchIconURL,
@@ -504,36 +504,36 @@ export default [
         connectingMessage: 'Connecting',
         helpLink: 'https://www.cubroid.com'
     },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="큐브로이드 음성인식"
-                description="큐브로이드 음성인식"
-                id="gui.extension.cubroidspeech2scratch.name"
-            />
-        ),
-        extensionId: 'speech2scratch',
-        collaborator: 'Cubroid',
-        iconURL: speech2scratchBgURL,
-        insetIconURL: speech2scratchIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="음성 인식 기능을 이용하여 음성을 텍스트로 변환 합니다."
-                description="음성 인식 기능을 이용하여 음성을 텍스트로 변환 합니다."
-                id="gui.extension.cubroidspeech2scratch.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: false,
-        internetConnectionRequired: false,
-        launchPeripheralConnectionFlow: false,
-        useAutoScan: false,
-        connectionIconURL: speech2scratchIconURL,
-        connectionSmallIconURL: speech2scratchIconURL,
-        connectingMessage: 'Connecting',
-        helpLink: 'https://www.cubroid.com'
-    },
+    // {
+    //     name: (
+    //         <FormattedMessage
+    //             defaultMessage="큐브로이드 음성인식"
+    //             description="큐브로이드 음성인식"
+    //             id="gui.extension.cubroidspeech2scratch.name"
+    //         />
+    //     ),
+    //     extensionId: 'speech2scratch',
+    //     collaborator: 'Cubroid',
+    //     iconURL: speech2scratchBgURL,
+    //     insetIconURL: speech2scratchIconURL,
+    //     description: (
+    //         <FormattedMessage
+    //             defaultMessage="음성 인식 기능을 이용하여 음성을 텍스트로 변환 합니다."
+    //             description="음성 인식 기능을 이용하여 음성을 텍스트로 변환 합니다."
+    //             id="gui.extension.cubroidspeech2scratch.description"
+    //         />
+    //     ),
+    //     featured: true,
+    //     disabled: false,
+    //     bluetoothRequired: false,
+    //     internetConnectionRequired: false,
+    //     launchPeripheralConnectionFlow: false,
+    //     useAutoScan: false,
+    //     connectionIconURL: speech2scratchIconURL,
+    //     connectionSmallIconURL: speech2scratchIconURL,
+    //     connectingMessage: 'Connecting',
+    //     helpLink: 'https://www.cubroid.com'
+    // },
     {
         name: (
             <FormattedMessage
@@ -556,7 +556,7 @@ export default [
         featured: true,
         disabled: false,
         bluetoothRequired: false,
-        internetConnectionRequired: false,
+        internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
         connectionIconURL: facemesh2scratchIconURL,
@@ -586,7 +586,7 @@ export default [
         featured: true,
         disabled: false,
         bluetoothRequired: false,
-        internetConnectionRequired: false,
+        internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
         connectionIconURL: handpose2scratchIconURL,
@@ -646,7 +646,7 @@ export default [
         featured: true,
         disabled: false,
         bluetoothRequired: false,
-        internetConnectionRequired: false,
+        internetConnectionRequired: true,
         launchPeripheralConnectionFlow: false,
         useAutoScan: false,
         connectionIconURL: iftttwebhooks2scratchIconURL,
